@@ -3,11 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 const projects = [
   {
-    title: "Webikoo",
+    title: "Transition Quality",
     description:
-      "Webikoo is a web design and development agency that specializes in creating custom websites for businesses and individuals. They offer a range of services including web design, web development, e-commerce solutions and web/mobile app development.",
-    image: "webikoo/webikoo.webp",
-    link: "https://webikoo.pro",
+      "Transition Quality Management is a consulting firm that specializes in quality management systems and business process improvement.",
+    image: "transition/transition.webp",
+    link: "https://transitionquality.com",
     tools: [
       { name: "WordPress", icon: "wordpress" },
       { name: "Elementor", icon: "elementor" },
@@ -41,6 +41,17 @@ const projects = [
       "Restaurant website for a local eatery that offers a variety of delicious dishes and a cozy atmosphere.",
     image: "gourmet/gourmet.webp",
     link: "https://espacegourmet.com",
+    tools: [
+      { name: "WordPress", icon: "wordpress" },
+      { name: "Elementor", icon: "elementor" },
+    ],
+  },
+  {
+    title: "Webikoo",
+    description:
+      "Webikoo is a web design and development agency that specializes in creating custom websites for businesses and individuals. They offer a range of services including web design, web development, e-commerce solutions and web/mobile app development.",
+    image: "webikoo/webikoo.webp",
+    link: "https://webikoo.pro",
     tools: [
       { name: "WordPress", icon: "wordpress" },
       { name: "Elementor", icon: "elementor" },
