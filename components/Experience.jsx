@@ -4,16 +4,25 @@ import React from "react";
 const experiences = [
   {
     id: 1,
+    entreprise: "WEBIKOO",
+    length: "Aug 2025 - now",
+    image: "webikoop.png",
+    description:
+      "Co-founder & Lead Developer, Leading a team of developers and designers to deliver high-quality web solutions for clients, Built over 30+ custom websites using WordPress & Elementor / React / Angular / NodeJS..., Ensuring projects are completed on time and within budget while maintaining client satisfaction.",
+  },
+  {
+    id: 2,
     entreprise: "ASAMAAN",
     length: "Oct 2023 - now",
     image: "asamaan.jpg",
     description:
-      "Co-founder & Software Engineer, ASAMAAN goal is to redifine the landscape of aerial technology, Our mission is to develop affordable high performance VTOL drones that redefine the possibilities of aerial mapping - surveillance and tracking",
+      "Co-founder & Software Engineer, PROJECT PAUSED FOR THE MOMENT 🥲",
   },
+
   {
-    id: 2,
+    id: 3,
     entreprise: "GALSEN DIGITAL",
-    length: "Jul 2022 - now",
+    length: "Jul 2022 - Aug 2025",
     image: "gda.png",
     description:
       "Software Engineer, Designed & Developped several web sites & apps built with WordPress - React/Angular/Tailwind - MERN Stack..., Has participated in the creation of multiple mobile apps",
