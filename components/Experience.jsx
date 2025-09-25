@@ -8,24 +8,24 @@ const experiences = [
     length: "Aug 2025 - now",
     image: "webikoop.png",
     description:
-      "Co-founder & Lead Developer, Leading a team of developers and designers to deliver high-quality web solutions for clients, Built over 30+ custom websites using WordPress & Elementor / React / Angular / NodeJS..., Ensuring projects are completed on time and within budget while maintaining client satisfaction.",
+      "Co-founder & Lead Developer, Leading a team of developers and designers to deliver high-quality web solutions for clients, Ensuring projects are completed on time and within budget while maintaining client satisfaction.",
   },
-  {
-    id: 2,
-    entreprise: "ASAMAAN",
-    length: "Oct 2023 - now",
-    image: "asamaan.jpg",
-    description:
-      "Co-founder & Software Engineer, PROJECT PAUSED FOR THE MOMENT 🥲",
-  },
+  // {
+  //   id: 2,
+  //   entreprise: "ASAMAAN",
+  //   length: "Oct 2023 - now",
+  //   image: "asamaan.jpg",
+  //   description:
+  //     "Co-founder & Software Engineer, PROJECT PAUSED FOR THE MOMENT 🥲",
+  // },
 
   {
-    id: 3,
+    id: 2,
     entreprise: "GALSEN DIGITAL",
     length: "Jul 2022 - Aug 2025",
     image: "gda.png",
     description:
-      "Software Engineer, Designed & Developped several web sites & apps built with WordPress - React/Angular/Tailwind - MERN Stack..., Has participated in the creation of multiple mobile apps",
+      "Software Engineer, Designed & Developped several web sites & apps built with WordPress - React/Angular/Tailwind - MERN Stack..., Has participated in the creation of multiple mobile apps, Built over 30+ custom websites using WordPress & Elementor / React / Angular / NodeJS",
   },
 ];
 
