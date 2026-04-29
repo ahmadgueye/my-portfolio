@@ -20,7 +20,7 @@ const skills = [
     { name: "NodeJS", icon: "node", category: "backend" },
     { name: "WordPress", icon: "wordpress", category: "cms" },
     { name: "Elementor", icon: "elementor", category: "cms" },
-    // { name: "npm", icon: "npm", category: "tools" },
+    { name: "npm", icon: "npm", category: "tools" },
     { name: "Trello", icon: "trello", category: "tools" },
     { name: "Slack", icon: "slack", category: "tools" },
     // { name: "Composer", icon: "composer", category: "tools" },
@@ -31,6 +31,9 @@ const skills = [
     { name: "Webstorm", icon: "webstorm", category: "tools" },
     { name: "VS Code", icon: "vscode", category: "tools" },
     { name: "Express JS", icon: "express", category: "backend" },
+    { name: "Cursor", icon: "cursor", category: "ai" },
+    { name: "ChatGPT", icon: "openai", category: "ai" },
+    { name: "Claude", icon: "claude", category: "ai" },
 ];
 
 const TechList = () => {
@@ -106,6 +109,15 @@ const TechList = () => {
                   onClick={() => setSelectedCategory("cms")}
               >
                   CMS
+              </button>
+
+              <button
+                  className={`filter-button ${
+                      selectedCategory === "ai" ? "active" : ""
+                  }`}
+                  onClick={() => setSelectedCategory("ai")}
+              >
+                  AI
               </button>
           </div>
 

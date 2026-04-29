@@ -86,15 +86,15 @@ hr {
 }
 
 .filter-button {
-  @apply border border-white rounded-full px-2 text-xs;
+  @apply border border-white rounded-full px-2 py-1 text-xs;
 }
 
 .filter-button:hover {
-  @apply bg-white text-black rounded-full px-2;
+  @apply bg-white text-black;
 }
 
 .filter-button.active {
-  @apply bg-white text-black rounded-full px-2;
+  @apply bg-white text-black;
 }
 
 .blinking-cursor {
