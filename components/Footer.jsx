@@ -7,7 +7,7 @@ const socials = [
   {
     id: 1,
     name: "LinkedIn",
-    link: "https://www.linkedin.com/in/mouhamad-gueye-b00b31229/",
+    link: "https://www.linkedin.com/in/muhammadguey",
     icon: "linkedin.svg",
   },
   {
@@ -24,7 +24,7 @@ const Footer = () => {
         <SectionHeader
           icon={"contact"}
           title={"Contact Me"}
-          description={"Let's talk about your project asap 📩"}
+          description={"Let's talk about your project now ! 📩"}
         />
         <div className="border-op p-2">
           <ul className="space-y-2">
@@ -43,7 +43,7 @@ const Footer = () => {
                         height={30}
                         alt={social.name}
                       />
-                      <span>{social.name}</span>
+                      <span className="text-sm">{social.name}</span>
                       <img
                         src="/assets/ext-link.svg"
                         alt=""
@@ -69,11 +69,7 @@ const Footer = () => {
           alt={"calendly"}
           className="rounded-full object-cover"
         />
-        <img
-          src="/assets/ext-link.svg"
-          alt=""
-          className="w-12 h-12 bg-background rounded-full border border-white"
-        />
+
       </Link>
     </footer>
   );

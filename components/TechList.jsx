@@ -10,6 +10,9 @@ const skills = [
     { name: "Tailwind", icon: "tailwind", category: "frontend" },
     { name: "Bootstrap", icon: "bootstrap", category: "frontend" },
     { name: "SASS", icon: "sass", category: "frontend" },
+    { name: "HTML", icon: "html", category: "frontend" },
+    { name: "CSS", icon: "css", category: "frontend" },
+    { name: "JS", icon: "js", category: "frontend" },
     { name: "Laravel", icon: "laravel", category: "fullstack" },
     { name: "React Native", icon: "react", category: "frontend" },
     { name: "MySQL", icon: "mysql", category: "backend" },
@@ -46,7 +49,7 @@ const TechList = () => {
             description={"Technologies I worked with"}
         />
 
-          <div className="flex flex-wrap justify-center gap-2 mb-5">
+          <div className="flex flex-wrap  gap-2 mb-5">
               <button
                   className={`filter-button ${
                       selectedCategory === "all" ? "active" : ""
@@ -106,7 +109,7 @@ const TechList = () => {
               </button>
           </div>
 
-          <div className="flex justify-center gap-3 flex-wrap">
+          <div className="flex  gap-3 flex-wrap">
               {filteredSkills.map((skill, index) => (
                   <span className="tools" key={index}>
             <Image
@@ -115,7 +118,7 @@ const TechList = () => {
                 height={25}
                 alt={skill.icon}
             />
-            <span className="tool-name">{skill.name}</span>
+            {/*<span className="tool-name">{skill.name}</span>*/}
           </span>
           ))}
         </div>

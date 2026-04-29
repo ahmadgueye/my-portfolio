@@ -79,6 +79,32 @@ const projects = [
       { name: "Elementor", icon: "elementor" },
     ],
   },
+
+  {
+    title: "Helium",
+    description:
+        "Just a training landing page",
+    image: "helium/helium.webp",
+    link: "https://ahmadgueye.github.io/mouse-effect/",
+    tools: [
+      { name: "HTML", icon: "html" },
+      { name: "CSS", icon: "css" },
+      { name: "Javascript", icon: "js" },
+    ],
+  },
+
+  {
+    title: "Gaming Campus",
+    description:
+        "Just a training landing page",
+    image: "gaming-campus/gaming-campus.webp",
+    link: "https://ahmadgueye.github.io/gaming-campus-page/",
+    tools: [
+      { name: "HTML", icon: "html" },
+      { name: "CSS", icon: "css" },
+      { name: "Javascript", icon: "js" },
+    ],
+  },
   // {
   //     title: "CBurger",
   //     description: "CBurger is an online burger ordering & fast-food management platform. It allows the customer to order a burger and the manager is able to treat the order and change the status and notify the customer via email.",
@@ -115,15 +141,15 @@ const projects = [
   //     target : '_blank'
   //
   // },
-  // {
-  //     title: "Waxtu Joob",
-  //     description: "Waxtu joob is a pomodoro app for helping you focus on your work time. It sets a time for work and a time for pause e.g:25/5 (25 mins of work and 5mins of pause)",
-  //     image: "waxtu.png",
-  //     link: "#",
-  //     tools: [
-  //         { name: "React", icon: "react" },
-  //     ],
-  // },
+  {
+      title: "Takku",
+      description: "Takku joob is a pomodoro app for helping you focus on your work time. It sets a time for work and a time for pause e.g:25/5 (25 mins of work and 5mins of pause)",
+      image: "waxtu.png",
+      link: "https://takku.vercel.app/",
+      tools: [
+          { name: "React", icon: "react" },
+      ],
+  },
   {
     title: "Jaba",
     description:
@@ -141,7 +167,7 @@ const projects = [
     title: "Bookmark",
     description: "",
     image: "bookmark/bookmark.png",
-    link: "https://noheezybucket.github.io/bookmark-landing-page/",
+    link: "https://ahmadgueye.github.io/bookmark-landing-page/",
     tools: [
       { name: "React", icon: "react" },
       { name: "Tailwind", icon: "tailwind" },
@@ -152,7 +178,7 @@ const projects = [
     title: "Manage",
     description: "",
     image: "manage.png",
-    link: "https://noheezybucket.github.io/manage-landing-page/",
+    link: "https://ahmadgueye.github.io/manage-landing-page/",
     tools: [
       { name: "React", icon: "react" },
       { name: "Tailwind", icon: "tailwind" },
@@ -163,15 +189,18 @@ const projects = [
     title: "Chat app landing page",
     description: "A frontend made with html and css only",
     image: "chat-app.png",
-    link: "https://noheezybucket.github.io/chat-app-pure-css/",
-    tools: [{ name: "Sass", icon: "sass" }],
+    link: "https://ahmadgueye.github.io/chat-app-pure-css/",
+    tools: [
+        { name: "Sass", icon: "sass" },
+      { name: "HTML", icon: "html" },
+    ],
     target: "_blank",
   },
   {
     title: "Fylo",
     description: "",
     image: "fylo.png",
-    link: "https://noheezybucket.github.io/fylo-dark-theme-landing-page/",
+    link: "https://ahmadgueye.github.io/fylo-dark-theme-landing-page/",
     tools: [
       { name: "React", icon: "react" },
       { name: "Tailwind", icon: "tailwind" },
@@ -200,10 +229,10 @@ const ProjectsList = ({ limit }) => {
 
               <div className="flex flex-col gap-2">
                 <div className={"flex justify-between"}>
-                  <h3 className="text-xl font-semibold">{project.title}</h3>
+                  <h3 className="text-lg font-semibold">{project.title}</h3>
                   <Link
                     href={project.link}
-                    className="underline flex justify-center"
+                    className="underline flex justify-center items-center text-sm"
                     key={project.id}
                     target="_blank"
                   >
@@ -226,7 +255,7 @@ const ProjectsList = ({ limit }) => {
                           height={25}
                           alt="me"
                         />
-                        <span className="tool-name">{tool.name}</span>
+                        {/*<span className="tool-name">{tool.name}</span>*/}
                       </span>
                     );
                   })}

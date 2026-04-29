@@ -40,11 +40,11 @@ const Education = () => {
           <div key={index}>
             <div>
               <div className="flex flex-col sm:flex-row justify-between">
-                <span className="text-xl font-semibold flex items-center gap-2">
+                <span className="text-md font-semibold flex items-center gap-2">
                   {/* <span className="w-3 h-3 bg-orange-500 block rounded-full"></span> */}
                   {edu.school}
                 </span>
-                <span className="text-sm">
+                <span className="text-xs">
                   {edu.length ? (
                     edu.length
                   ) : (
@@ -63,7 +63,7 @@ const Education = () => {
                   )}
                 </span>
               </div>
-              <div className="text-sm">
+              <div className="text-xs">
                 {edu.description.split(",").map((descli, index) => {
                   return (
                     descli && (

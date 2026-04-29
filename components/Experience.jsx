@@ -4,11 +4,19 @@ import React from "react";
 const experiences = [
   {
     id: 1,
+    entreprise: "DICAN",
+    length: "Oct 2025 - now",
+    image: "dican.png",
+    description:
+        "Collaborator-style contract, Develop websites with WordPress, UX/UI Design with Figma",
+  },
+  {
+    id: 2,
     entreprise: "WEBIKOO",
     length: "Aug 2025 - now",
     image: "webikoop.png",
     description:
-      "Co-founder & Lead Developer, Leading a team of developers and designers to deliver high-quality web solutions for clients, Ensuring projects are completed on time and within budget while maintaining client satisfaction.",
+      "Founding Developer, Leading a team of developers and designers to deliver high-quality web solutions for clients, Ensuring projects are completed on time and within budget while maintaining client satisfaction.",
   },
   // {
   //   id: 2,
@@ -20,12 +28,12 @@ const experiences = [
   // },
 
   {
-    id: 2,
+    id: 3,
     entreprise: "GALSEN DIGITAL",
     length: "Jul 2022 - Aug 2025",
     image: "gda.png",
     description:
-      "Software Engineer, Designed & Developped several web sites & apps built with WordPress - React/Angular/Tailwind - MERN Stack..., Has participated in the creation of multiple mobile apps, Built over 30+ custom websites using WordPress & Elementor / React / Angular / NodeJS",
+      "Full-time contract, Software Engineer, Designed & Developped several web sites & apps built with WordPress - React/Angular/Tailwind - MERN Stack..., Has participated in the creation of multiple mobile apps, Built over 30+ custom websites using WordPress & Elementor / React / Angular / NodeJS",
   },
 ];
 
@@ -35,7 +43,7 @@ const Experience = () => {
       {experiences.map((xp, index) => {
         return (
           <div className="bg-background space-y-5" key={index}>
-            <div className="flex gap-5 items-center">
+            <div className="flex gap-2 items-center">
               <Image
                 src={`/assets/${xp.image}`}
                 width={50}
@@ -46,11 +54,11 @@ const Experience = () => {
               <div className="w-full">
                 <div className="flex flex-col lg:flex-row  justify-between">
                   <span className="text-xl font-semibold">{xp.entreprise}</span>
-                  <span className="text-sm">{xp.length}</span>
+                  <span className="text-xs">{xp.length}</span>
                 </div>
               </div>
             </div>
-            <div className="text-sm list-none space-y-1">
+            <div className="text-xs list-none space-y-1">
               {xp.description.split(",").map((descli, index) => {
                 return descli && <li key={index}>- {descli}</li>;
               })}

@@ -26,15 +26,15 @@ const Blog = () => {
 
           <div className="flex flex-col gap-2 md:w-10/12">
             <div className={'flex justify-between'}>
-              <h3 className="text-xl">How to boost your productivity in 2024 🚀🤌🏾</h3>
+              <h3 className="text-lg">How to boost your productivity in 2024 🚀🤌🏾</h3>
             </div>
-            <div className={'flex gap-5'}>
+            <div className={'flex gap-5 text-xs'}>
               <span>19 August 2024</span>
               <span>10 minutes read</span>
             </div>
             <Link
                 href={'/article'}
-                className="underline flex"
+                className="underline flex text-sm"
             >
               More details
               <img src="/assets/ext-link.svg" alt="" className="ext-link-icon"/>

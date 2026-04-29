@@ -16,8 +16,8 @@ const SectionHeader = ({
           <Image src={`/assets/${icon}.svg`} width={50} height={50} alt="me" />
         </div>
         <div>
-          <h2 className="text-2xl font-semibold">{title}</h2>
-          <span className="text-sm">{description}</span>
+          <h2 className="text-xl font-semibold">{title}</h2>
+          <span className="text-xs">{description}</span>
         </div>
       </div>
 
@@ -26,7 +26,7 @@ const SectionHeader = ({
           <Link
             href={buttonLink}
             // target="_blank"
-            className="flex items-end underline"
+            className="flex items-end underline text-sm"
           >
             {buttonName}{" "}
             <img src="/assets/ext-link.svg" alt="" className="ext-link-icon" />
